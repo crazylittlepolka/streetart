@@ -6,7 +6,7 @@ export const streetArt =
 		category: 'graffitti',
 		lat: 52.238692,
 		lng: 20.994728, 
-		imageUrl: 'image/...' 
+		imageUrl: '' 
 	},	
 		{
 		id: 1, 
@@ -14,7 +14,7 @@ export const streetArt =
 		category: 'graffitti',
 		lat: 52.228819,
 		lng: 20.994546, 
-		imageUrl: 'image/...' 
+		imageUrl: './images/owlGraffitti.jpg' 
 	},
 	{
 		id: 2, 
@@ -22,7 +22,7 @@ export const streetArt =
 		category: 'graffitti', 
 		lat: 52.228819,
 		lng: 20.994546, 
-		imageUrl: 'image/...' 
+		imageUrl: './images/zefir.jpg' 
 	},
 	{
 		id: 3, 
@@ -30,7 +30,7 @@ export const streetArt =
 		category: 'neon', 
 		lat: 52.232962,
 		lng: 21.010927, 
-		imageUrl: 'image/...' 
+		imageUrl: './images/relax.jpg' 
 	},
 	{
 		id: 4, 
@@ -38,6 +38,6 @@ export const streetArt =
 		category: 'sign', 
 		lat: 52.246037,
 		lng: 21.017535, 
-		imageUrl: 'image/...' 
+		imageUrl: './images/owlSign.jpg' 
 	}
 ]
