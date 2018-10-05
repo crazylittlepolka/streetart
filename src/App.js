@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { streetArt } from './streetArt';
+
 import owlGraffitti from'./images/owlGraffitti.jpg'
+
 import './App.css';
 
 class App extends Component {
@@ -16,7 +18,31 @@ class App extends Component {
         
           some text { streetArt[1].title }
         </p>
-        <img style={{width: 200, height: 200, backgroundImage: `${streetArt[1].imageUrl}`}}  alt=""/>
+        <div className="container">
+          {
+            streetArt.map(location => {
+              return (
+                <div
+                  key={ location.id }
+                  className= "photo"
+                >
+
+                  <img
+                    src={ location.imageUrl}
+                    alt={ location.title }
+                  />
+
+                  <p>Title: { location.title }</p>
+                  <p>Category: { location.category }</p>
+
+                </div>
+                
+              )
+            })
+
+          }
+        </div>
+
       </div>
     );
   }
