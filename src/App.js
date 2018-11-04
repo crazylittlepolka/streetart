@@ -6,6 +6,17 @@ import owlGraffitti from'./images/owlGraffitti.jpg'
 import './App.css';
 
 class App extends Component {
+
+  state = {
+    openMap: false
+  }
+
+  //open/hide map
+  updateMap = () => {
+    const mapIsOpen = this.state.openMap;
+    this.setState( { openMap : !mapIsOpen })
+  }
+
   render() {
 
     return (
@@ -42,7 +53,10 @@ class App extends Component {
 
           }
         </div>
+        <div className="map--open">
+          <p>Map</p>
 
+        </div>
       </div>
     );
   }
